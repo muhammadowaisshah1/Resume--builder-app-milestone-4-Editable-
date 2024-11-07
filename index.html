@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume application</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Editable Resume App</h1>
+    <form id="resume-form">
+<fieldset>
+    <legend><strong>Personal Information</strong></legend>
+    <label for="name">Full Name: </label>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+    <label for="email"> Email Address: </label>
+    <input type="email" id="email" placeholder="Enter Your email" required>
+    <label for="Phone"> Phone Number: </label>
+    <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+
+</fieldset>
+
+<fieldset>
+    <legend><strong>Your Education</strong></legend>
+    <label for="education"> Education: </label>
+    <textarea id="education" placeholder="Enter Your Education" rows="6" ></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend><strong>How Experience in This field</strong></legend>
+    <label for="Experience"> Experience: </label>
+    <textarea id="experience" placeholder="Enter Your Work Experience" rows="4" ></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend><strong> Write your Skills</strong></legend>
+    <label for="Skills"> Skills: </label>
+    <textarea id="skills" placeholder="Enter Your Work Skills" rows="4" ></textarea>
+
+</fieldset>
+<fieldset>
+    <legend><strong>Add Profile picture</strong></legend>
+    <label for="profilePicture"><input type="file" name="profilePicture" id="profilePicture" accept="image/*" required>
+</fieldset>
+
+        <button type="submit"><strong>Generate Resume</strong></button>
+    </form>
+
+    <br>
+
+
+    
+     <div id="resume-display" contenteditable="true">
+        
+     </div>
+     
+     <script src="script.js"></script>
+
+</body>
+</html>
